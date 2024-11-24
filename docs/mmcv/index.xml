@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>MMCV on My Docs</title><link>https://chennnuo.github.io/docs/mmcv/</link><description>Recent content in MMCV on My Docs</description><generator>Hugo</generator><language>en</language><copyright>Copyright (c) 2020-2024 Thulite</copyright><lastBuildDate>Mon, 18 Nov 2024 14:20:00 +0800</lastBuildDate><atom:link href="https://chennnuo.github.io/docs/mmcv/index.xml" rel="self" type="application/rss+xml"/><item><title>MMCV-Runner</title><link>https://chennnuo.github.io/docs/mmcv/mmcv-runner/</link><pubDate>Mon, 18 Nov 2024 14:20:00 +0800</pubDate><guid>https://chennnuo.github.io/docs/mmcv/mmcv-runner/</guid><description>Runner Runner是算法训练部分的引擎，其核心功能和特性如下：
+负责MMCV中所有框架的训练过程调度
+支持定制工作流以满足训练过程中的各状态自由切换
+提供了Epoch和Iter为基础的迭代模式，以满足不同的场景
+配合各类Hook，对外提供了灵活的拓展能力，注入不同Hook可在训练过程中优雅的实现拓展功能
+运行步骤 Runner对象初始化
+注册各类 Hook 到 Runner 中
+调用 Runner 中的 rusume 或者 load_checkpoint 方法对权重进行加载</description></item><item><title>MMCV-Registry</title><link>https://chennnuo.github.io/docs/mmcv/mmcv-registry/</link><pubDate>Thu, 07 Sep 2023 16:04:48 +0200</pubDate><guid>https://chennnuo.github.io/docs/mmcv/mmcv-registry/</guid><description>Registry Registry可以提供一种完全相似的对外装饰函数来管理构建不同组件 例如：backbone、head、neck等 其实内部实现是一个全局的key-value对 优点是可以通过字符串实例化任何想要的模块、解耦性强、可扩展性强，代码更易理解。
+# 例如Faster R-CNN的backbone： backbone=dict( type=&amp;#39;ResNet&amp;#39;, # 待实例化的类名 depth=50, # 后面的都是对于的类初始化参数 num_stages=4, out_indices=(0, 1, 2, 3), frozen_stages=1, norm_cfg=dict(type=&amp;#39;BN&amp;#39;, requires_grad=True), norm_eval=True, style=&amp;#39;pytorch&amp;#39;),主要是注册器类Registry()和函数register_module() 简单实现类似于：</description></item></channel></rss>
